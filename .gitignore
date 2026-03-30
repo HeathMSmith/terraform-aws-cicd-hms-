@@ -1,0 +1,27 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+
+# Terraform lock file (KEEP THIS)
+# Do NOT ignore terraform.lock.hcl
+
+# Environment files
+.env
+.env.*
+
+# macOS
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Python (if you add scripts later)
+__pycache__/
+*.pyc
