@@ -22,6 +22,9 @@ jobs:
         with:
           role-to-assume: arn:aws:iam::859535765435:role/github-terraform-role 
           aws-region: us-east-1
+          
+      - name: Verify Identity
+        run: aws sts get-caller-identity
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
